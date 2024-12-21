@@ -9,7 +9,6 @@ soup = BeautifulSoup(response.text, "html.parser")
 # 1. 
 header=soup.find("div", attrs={"class":"col-sm-8 h1"})
 print(header.text)
-
 page = soup.find("li", class_="current")
 print("Current Page:", page.text.strip())
 
